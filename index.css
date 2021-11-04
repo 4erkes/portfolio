@@ -13,6 +13,7 @@ body {
     list-style: none;
     justify-content: space-between; 
     font-size: 18px;
+    font-weight: bold;
     padding: 30px 0;
     line-height: 22px;
     color: #828282;
@@ -43,10 +44,16 @@ a {
 
 .info span.lang {
    transform: rotate(-90deg);
+   align-self: center;
 }
 
 .info span:nth-child(2) {
     align-self: flex-end;
+}
+
+h1 {
+    font-size: 47px;
+    line-height: 58px;
 }
 
 .man {
@@ -68,9 +75,19 @@ a {
     margin-top: 80px;
 }
 
+.program-name {
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+
+.program-name-last {
+    padding-bottom: 60px;
+}
+
 h2 {
     padding-top: 110px;
     padding-bottom: 20px;
+    font-size: 34px;
 }
 
 .portfolio-back {
@@ -81,6 +98,34 @@ h2 {
     text-decoration-line: underline; 
     font-size: 18px;
     line-height: 22px;
-    margin-top: 45px;
-    margin-bottom: 90px;
+    padding-top: 45px;
+    padding-bottom: 90px;
+}
+
+.send{
+    margin-top: 30px;
+    background: black;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.contacts {
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+
+.social {
+    padding-top: 80px;
+    padding-bottom: 45px;
+}
+
+.social:not(:last-child) {
+    padding-right: 60px;
+}
+
+.end {
+    color:#828282;
 }
