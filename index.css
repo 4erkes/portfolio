@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home h3 {
+   text-align: center;
+   padding-top: 32px; 
+   padding-bottom: 32px;
+   padding-right: 155px;
+}
+
+.home h3:last-child {
+    padding-right: 0;
+}
