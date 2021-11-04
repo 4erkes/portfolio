@@ -49,6 +49,11 @@ a {
     align-self: flex-end;
 }
 
+.man {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
 .about {
     background-color: #F6F6F6;
 }
@@ -60,8 +65,22 @@ a {
 .programs {
     display: flex;
     justify-content: space-between;
+    margin-top: 80px;
 }
 
 h2 {
     padding-top: 110px;
+    padding-bottom: 20px;
+}
+
+.portfolio-back {
+    background: #F6F6F6;
+}
+
+.link {
+    text-decoration-line: underline; 
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 45px;
+    margin-bottom: 90px;
 }
