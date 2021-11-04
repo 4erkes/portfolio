@@ -1,11 +1,17 @@
 body {
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .home {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .home h3 {
@@ -13,8 +19,27 @@ body {
    padding-top: 32px; 
    padding-bottom: 32px;
    padding-right: 155px;
+   color: gray;
 }
 
 .home h3:last-child {
     padding-right: 0;
+}
+
+.home h3:first-child {
+    color: black;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.info span.lang {
+   transform: rotate(-90deg);
+}
+
+.info span:nth-child(2) {
+    align-self: flex-end;
 }
