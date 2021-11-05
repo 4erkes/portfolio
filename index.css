@@ -130,3 +130,22 @@ h2 {
 .end {
     color:#828282;
 }
+
+@media screen and (max-width: 960px) {
+   body {
+       background-color: red;
+   }   
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        background-color: green     ;
+    }   
+ }
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: green     ;
+    }   
+ }
+
