@@ -46,11 +46,21 @@ a {
 .info {
     display: flex;
     justify-content: space-between; 
+    position: relative;
+    padding: 2rem 0;
 }
 
 .info span.lang {
    transform: rotate(-90deg);
    align-self: center;
+}
+
+.lang a:hover {
+    color: grey;
+}
+
+.lang a:active {
+    color: goldenrod;
 }
 
 .info span:nth-child(3) {
@@ -60,6 +70,8 @@ a {
 h1 {
     font-size: 3rem;
     line-height: 3.6rem;
+    margin: 0;
+    margin-bottom: 2rem;
 }
 
 .man {
@@ -69,9 +81,19 @@ h1 {
 
 .burger {
     display: none;
-    width: 2rem;
-    height: 1rem;
-    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
+
+.burger img {
+    width: 100%;
 }
 
 .about {
@@ -145,6 +167,15 @@ h2 {
     padding: 0.56rem 1.67rem;
     border-radius: 30px;
     cursor: pointer;
+    border: none;
+}
+
+.send:hover {
+    background-color: grey;
+}
+
+.send:active {
+    color: black;
 }
 
 .contacts, .contacts-img {
@@ -171,9 +202,13 @@ h2 {
    } 
    .portfolio-img {
     width: 100%;
+   }
+
+    .portfolio-image {
+    width: 100%;
+    }
 }   
    
-}
 
 @media screen and (max-width: 720px) {
     body {  
@@ -207,7 +242,7 @@ h2 {
     }
 
     .burger {
-        display: block;
+        display: flex;
         margin-left: auto;
         border: none;
     }
