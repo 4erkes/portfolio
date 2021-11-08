@@ -116,6 +116,8 @@ h2 {
 
 .portfolio-img {
     padding: 0 0.5rem;
+    margin-bottom: 3rem;
+    margin-top: 7rem;
 }
 
 .link {
@@ -207,6 +209,7 @@ h2 {
     .burger {
         display: block;
         margin-left: auto;
+        border: none;
     }
      
     .lang {
@@ -221,23 +224,15 @@ h2 {
 
     .portfolio-img {
         width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
     }
 
-    .contacts-img {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        position: relative;
-
-    }
-
-    .social {
+    .container .social {
         margin-right: auto;
         margin-left: auto;
         margin-top: 0.5rem;
-    }
-
-    .social:last-child {
-        margin-right: auto;
-        margin-left: auto; 
+        padding-left: auto;
+        padding-right: auto;
     }
 }
