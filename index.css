@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
     justify-content: space-between; 
     font-size: 18px;
     font-weight: bold;
-    padding: 30px 0;
+    padding: 1.9rem 0;
     line-height: 22px;
     color: #828282;
     border-bottom: 1px solid #828282; 
@@ -52,79 +53,88 @@ a {
 }
 
 h1 {
-    font-size: 47px;
-    line-height: 58px;
+    font-size: 3rem;
+    line-height: 3.6rem;
 }
 
 .man {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 3.1rem;
+    padding-bottom: 6.2rem;
 }
 
 .about {
     background-color: #F6F6F6;
-    padding-bottom: 100px;
+    padding-bottom: 6.2rem;
 }
 
 .programs, .program-types {
     list-style: none;
+    padding-inline-start: 0;
 }
 
 .programs {
     display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
+    justify-content: space-between;  
+}
+
+.types {
+    margin-top: 5rem;
 }
 
 .program-name {
-    padding-top: 24px;
-    padding-bottom: 40px;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .program-name-last {
-    padding-bottom: 28px;
+    padding-bottom: 1.75rem;
 }
 
 h2 {
-    padding-top: 110px;
-    padding-bottom: 20px;
-    font-size: 34px;
+    padding-top: 6.9rem;
+    padding-bottom: 1.25rem;
+    font-size: 2.1rem;
 }
 
 .portfolio-back {
     background: #F6F6F6;
+    width: 100%;
+}
+
+.portfolio-img {
+    padding: 0 1rem;
 }
 
 .link {
     text-decoration-line: underline; 
-    font-size: 18px;
-    line-height: 22px;
-    padding-top: 45px;
-    padding-bottom: 90px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    padding-top: 2.8rem;
+    padding-bottom: 5.6rem;
 }
 
 .send{
-    margin-top: 30px;
+    margin-top: 1.9rem;
     background: black;
     color:white;
     font-weight: bold;
-    font-size: 18px;
-    padding: 10px 30px;
+    font-size: 1.1rem;
+    padding: 0.56rem 1.67rem;
     border-radius: 30px;
 }
 
 .contacts {
-    padding-top: 110px;
-    padding-bottom: 20px;
+    padding-top: 6.9rem;
+    padding-bottom: 1.25rem;
 }
 
 .social {
-    padding-top: 80px;
-    padding-bottom: 45px;
+    padding-top: 5rem;
+    padding-bottom: 2.8rem;
 }
 
 .social:not(:last-child) {
-    padding-right: 60px;
+    padding-right: 3.75rem;
 }
 
 .end {
@@ -133,19 +143,51 @@ h2 {
 
 @media screen and (max-width: 960px) {
    body {
-       background-color: red;
-   }   
+       font-size: 14px;
+   } 
+   .portfolio-img {
+    width: 100%;
+}   
+   
 }
 
 @media screen and (max-width: 720px) {
-    body {
-        background-color: green     ;
-    }   
+    body {  
+        font-size: 14px;
+        }
+    .portfolio-img {
+        width: 100%;
+        }
+    .programs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }    
  }
 
 @media screen and (max-width: 480px) {
-    body {
-        background-color: green     ;
-    }   
- }
+    .body {
+        font-size: 12px;
+    }
 
+    .menu {
+        display: none;
+    } 
+
+    .info {
+        display: grid;
+    }
+     
+    .lang {
+        display: none;
+    }
+
+    .programs {
+        display: inline; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .portfolio-img {
+        width: 100%;
+    }
+}
